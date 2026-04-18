@@ -54,17 +54,22 @@ address { font-style: normal; }
   overflow: hidden;
 }
 
-/* Background photo container — parallax target */
+/* Background container with gradient */
 .hero__bg {
   position: absolute;
-  inset: -15% 0 0;   /* extra height to allow parallax without gaps */
-  will-change: transform;
+  inset: 0;
+  background: linear-gradient(to bottom, #4A5F56, #3d4d47);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/* SVG portrait fills the bg like object-fit: cover */
+/* Portrait image centered over gradient */
 .hero__portrait {
-  width: 100%;
-  height: 100%;
+  max-height: 85vh;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
 }
 
 /* Gradient overlay: transparent (top 55%) → olive green (bottom 100%) */
