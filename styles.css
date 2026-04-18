@@ -312,30 +312,30 @@ address { font-style: normal; }
   padding: 3rem 1.5rem 2rem;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  text-align: center;
   gap: 2rem;
 }
 
 .footer__brand {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  text-align: center;
   gap: 0.4rem;
 }
 
 .footer__logo-wrap {
   display: flex;
   align-items: center;
-  gap: 0.6rem;
 }
 
-.footer__moon { flex-shrink: 0; }
-
-.footer__logo {
-  font-family: var(--font-display);
-  font-style: italic;
-  font-weight: 700;
-  font-size: 2rem;
-  color: white;
-  line-height: 1;
+.footer__logo-img {
+  width: 160px;
+  height: auto;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+  margin-bottom: 0.4rem;
 }
 
 .footer__tagline {
