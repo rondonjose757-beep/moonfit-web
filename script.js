@@ -20,11 +20,11 @@
       const scrollY = window.scrollY;
       const heroH   = heroSection.offsetHeight;
 
-      // Background moves at 30% of scroll speed (parallax depth)
+      // Photo moves up at 30% of scroll speed
       heroBg.style.transform = `translateY(${scrollY * 0.3}px)`;
 
-      // Subtle fade of the bg photo as user scrolls away from hero
-      const fade = Math.max(1 - (scrollY / (heroH * 0.8)), 0.2);
+      // Fade out photo as user scrolls away from hero
+      const fade = Math.max(1 - (scrollY / (heroH * 0.75)), 0.15);
       heroBg.style.opacity = fade;
 
       ticking = false;
@@ -45,7 +45,6 @@
     const observer = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
         if (entry.isIntersecting) {
-          // Stagger each card with an incremental delay
           const idx   = Array.from(reveals).indexOf(entry.target);
           const delay = idx * 120;
           entry.target.style.transitionDelay = delay + 'ms';
@@ -53,7 +52,7 @@
           observer.unobserve(entry.target);
         }
       });
-    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    }, { threshold: 0.1, rootMargin: '0px 0px -30px 0px' });
 
     reveals.forEach(function (el) { observer.observe(el); });
   } else {

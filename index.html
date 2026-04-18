@@ -5,102 +5,149 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="MoonFit – Nutrición saludable con María José Araujo. Menú saludable, consultoría nutricional, eventos y meal prep en Mérida, Venezuela." />
   <title>MoonFit – Come muy bien y vive mejor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,400;1,700&family=DM+Sans:wght@400;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <!-- ===== HERO FULL SCREEN ===== -->
+  <!-- ===== HERO ===== -->
   <section class="hero" aria-label="Presentación de MoonFit">
 
     <div class="hero__bg" id="heroBg" aria-hidden="true">
       <img class="hero__portrait" src="assets/maria-jose.webp" alt="María José Araujo" />
     </div>
 
-    <!-- Gradient: transparent top → olive green bottom (covers ~40% bottom) -->
     <div class="hero__overlay" aria-hidden="true"></div>
 
-    <!-- Text content over gradient -->
     <div class="hero__content">
-      <p class="hero__tagline">"✨ Come bien, vive mejor ✨"</p>
       <h1 class="hero__name">María José Araujo</h1>
-      <p class="hero__role">Nutricionista &amp; Fundadora de MoonFit</p>
-      <div class="hero__scroll" aria-hidden="true">
-        <span class="hero__scroll-icon">↓</span>
-      </div>
+      <p class="hero__subtitle">Nutrición que nutre tu cuerpo y tu alma</p>
+      <p class="hero__badge">Nutricionista &amp; Fundadora de MoonFit</p>
     </div>
 
   </section>
 
-  <!-- ===== CARDS SECTION ===== -->
-  <main class="cards" id="servicios" aria-label="Servicios de MoonFit">
+  <main>
 
-    <!-- Card 1 -->
-    <article class="card reveal" tabindex="0" aria-label="Menú Saludable">
-      <div class="card__media card__media--green" aria-hidden="true">
-        <img src="assets/logo_moonfit.webp" alt="Logo MoonFit" class="card__logo" />
-      </div>
-      <div class="card__body">
-        <h2 class="card__title">Menú Saludable</h2>
-        <p class="card__desc">Descubre nuestra variedad de comida saludable, bowls y bebidas funcionales</p>
-        <ul class="card__features" aria-label="Características">
-          <li>Ingredientes frescos</li>
-          <li>Opciones personalizadas</li>
-          <li>Valores nutricionales</li>
-        </ul>
-        <a href="https://wa.me/58000000000" class="btn" target="_blank" rel="noopener noreferrer">Explorar Menú</a>
-      </div>
-    </article>
+    <!-- ===== SERVICIOS ===== -->
+    <section class="services" id="servicios" aria-label="Servicios de MoonFit">
 
-    <!-- Card 2 -->
-    <article class="card reveal" tabindex="0" aria-label="Consultoría Nutricional">
-      <div class="card__media card__media--terra" aria-hidden="true">
-        <span class="card__icon">💪</span>
-      </div>
-      <div class="card__body">
-        <h2 class="card__title">Consultoría Nutricional</h2>
-        <p class="card__desc">Planes personalizados adaptados a tus objetivos de salud</p>
-        <ul class="card__features" aria-label="Características">
-          <li>Planes personalizados</li>
-          <li>Seguimiento continuo</li>
-          <li>Asesoramiento profesional</li>
-        </ul>
-        <a href="https://wa.me/58000000000" class="btn" target="_blank" rel="noopener noreferrer">Agendar Consulta</a>
-      </div>
-    </article>
+      <!-- Tarjeta 1 — Menú MoonFit -->
+      <a href="https://wa.me/58000000000"
+         class="card reveal"
+         target="_blank" rel="noopener noreferrer"
+         tabindex="0"
+         aria-label="Menú MoonFit – consultar por WhatsApp">
+        <div class="card__image-wrap" style="background: #4A5F56">
+          <img src="assets/menu.webp" alt="Menú MoonFit" class="card__img"
+               onerror="this.style.display='none'; this.parentElement.style.background='#4A5F56'" />
+        </div>
+        <div class="card__body">
+          <div class="card__text">
+            <h2 class="card__title">Menú MoonFit</h2>
+            <p class="card__desc">Bowls, desayunos, smoothies y bebidas funcionales</p>
+          </div>
+          <span class="card__arrow" aria-hidden="true">→</span>
+        </div>
+      </a>
 
-    <!-- Card 3 -->
-    <article class="card reveal" tabindex="0" aria-label="Eventos y Talleres">
-      <div class="card__media card__media--green" aria-hidden="true">
-        <span class="card__icon">🎉</span>
-      </div>
-      <div class="card__body">
-        <h2 class="card__title">Eventos &amp; Talleres</h2>
-        <p class="card__desc">Celebraciones y talleres saludables para grupos y familias</p>
-        <ul class="card__features" aria-label="Características">
-          <li>Cumpleaños saludables</li>
-          <li>Talleres educativos</li>
-          <li>Eventos corporativos</li>
-        </ul>
-        <a href="https://wa.me/58000000000" class="btn" target="_blank" rel="noopener noreferrer">Reservar Evento</a>
-      </div>
-    </article>
+      <!-- Tarjeta 2 — Consultoría Nutricional -->
+      <a href="https://wa.me/58000000000"
+         class="card reveal"
+         target="_blank" rel="noopener noreferrer"
+         tabindex="0"
+         aria-label="Consultoría Nutricional – consultar por WhatsApp">
+        <div class="card__image-wrap" style="background: #C8916A">
+          <img src="assets/nutricion.webp" alt="Consultoría Nutricional" class="card__img"
+               onerror="this.style.display='none'; this.parentElement.style.background='#C8916A'" />
+        </div>
+        <div class="card__body">
+          <div class="card__text">
+            <h2 class="card__title">Consultoría Nutricional</h2>
+            <p class="card__desc">Planes personalizados para tus objetivos de salud</p>
+          </div>
+          <span class="card__arrow" aria-hidden="true">→</span>
+        </div>
+      </a>
 
-    <!-- Card 4 -->
-    <article class="card reveal" tabindex="0" aria-label="Meal Prep Semanal">
-      <div class="card__media card__media--terra" aria-hidden="true">
-        <span class="card__icon">📦</span>
+      <!-- Tarjeta 3 — Eventos & Talleres -->
+      <a href="https://wa.me/58000000000"
+         class="card reveal"
+         target="_blank" rel="noopener noreferrer"
+         tabindex="0"
+         aria-label="Eventos y Talleres – consultar por WhatsApp">
+        <div class="card__image-wrap" style="background: #7A9E8E">
+          <img src="assets/eventos.webp" alt="Eventos y Talleres" class="card__img"
+               onerror="this.style.display='none'; this.parentElement.style.background='#7A9E8E'" />
+        </div>
+        <div class="card__body">
+          <div class="card__text">
+            <h2 class="card__title">Eventos &amp; Talleres</h2>
+            <p class="card__desc">Celebraciones y talleres saludables para grupos</p>
+          </div>
+          <span class="card__arrow" aria-hidden="true">→</span>
+        </div>
+      </a>
+
+      <!-- Tarjeta 4 — Meal Prep Semanal -->
+      <a href="https://wa.me/58000000000"
+         class="card reveal"
+         target="_blank" rel="noopener noreferrer"
+         tabindex="0"
+         aria-label="Meal Prep Semanal – consultar por WhatsApp">
+        <div class="card__image-wrap" style="background: #D4B896">
+          <img src="assets/mealprep.webp" alt="Meal Prep Semanal" class="card__img"
+               onerror="this.style.display='none'; this.parentElement.style.background='#D4B896'" />
+        </div>
+        <div class="card__body">
+          <div class="card__text">
+            <h2 class="card__title">Meal Prep Semanal</h2>
+            <p class="card__desc">Comidas balanceadas preparadas y entregadas en tu puerta</p>
+          </div>
+          <span class="card__arrow" aria-hidden="true">→</span>
+        </div>
+      </a>
+
+      <!-- Tarjeta 5 — Catering Saludable -->
+      <a href="https://wa.me/58000000000"
+         class="card reveal"
+         target="_blank" rel="noopener noreferrer"
+         tabindex="0"
+         aria-label="Catering Saludable – consultar por WhatsApp">
+        <div class="card__image-wrap" style="background: #3d4d47">
+          <img src="assets/catering.webp" alt="Catering Saludable" class="card__img"
+               onerror="this.style.display='none'; this.parentElement.style.background='#3d4d47'" />
+        </div>
+        <div class="card__body">
+          <div class="card__text">
+            <h2 class="card__title">Catering Saludable</h2>
+            <p class="card__desc">Servicio de catering para eventos con opciones saludables</p>
+          </div>
+          <span class="card__arrow" aria-hidden="true">→</span>
+        </div>
+      </a>
+
+    </section>
+
+    <!-- ===== SOBRE MÍ ===== -->
+    <section class="about" aria-label="Sobre María José Araujo">
+      <div class="about__inner">
+        <h2 class="about__title">Sobre mí</h2>
+        <p class="about__text">
+          Hola, soy María José Araujo, nutricionista certificada y fundadora de MoonFit.
+          Mi misión es ayudarte a construir una relación sana con la comida, sin restricciones
+          ni extremos. Creo que nutrirse debe ser simple, sostenible y placentero.
+          Juntos redefinimos lo que significa vivir bien.
+        </p>
+        <a href="https://wa.me/58000000000"
+           class="btn btn--outline"
+           target="_blank" rel="noopener noreferrer">
+          Contáctame por WhatsApp
+        </a>
       </div>
-      <div class="card__body">
-        <h2 class="card__title">Meal Prep Semanal</h2>
-        <p class="card__desc">Comidas balanceadas preparadas y entregadas en tu puerta</p>
-        <ul class="card__features" aria-label="Características">
-          <li>Variadas y balanceadas</li>
-          <li>Entrega semanal</li>
-          <li>Planes flexibles</li>
-        </ul>
-        <a href="https://wa.me/58000000000" class="btn" target="_blank" rel="noopener noreferrer">Solicitar Meal Prep</a>
-      </div>
-    </article>
+    </section>
 
   </main>
 
@@ -109,39 +156,66 @@
     <div class="footer__inner">
 
       <div class="footer__brand">
-        <p class="footer__logo">MoonFit</p>
-        <p class="footer__tagline">Come bien, vive mejor</p>
+        <div class="footer__logo-wrap">
+          <!-- Luna creciente con hojita -->
+          <svg class="footer__moon" width="40" height="40" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+            <defs>
+              <mask id="crescent-mask">
+                <rect width="40" height="40" fill="white"/>
+                <circle cx="25" cy="17" r="11" fill="black"/>
+              </mask>
+            </defs>
+            <circle cx="19" cy="19" r="13" fill="white" mask="url(#crescent-mask)"/>
+            <path d="M30 32 C30 25 38 24 38 24 C38 24 37 31 30 32 Z" fill="white" opacity="0.72"/>
+          </svg>
+          <span class="footer__logo">MoonFit</span>
+        </div>
+        <p class="footer__tagline">Eat and live better</p>
       </div>
-
-      <address class="footer__contact">
-        <p class="footer__item">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          Garana, Mérida, Venezuela
-        </p>
-        <p class="footer__item">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-          <a href="https://wa.me/58000000000" class="footer__link" target="_blank" rel="noopener noreferrer">+58 (000) 000-0000</a>
-        </p>
-        <p class="footer__item">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-          <a href="mailto:contacto@moonfit.com" class="footer__link">contacto@moonfit.com</a>
-        </p>
-      </address>
 
       <div class="footer__social">
-        <a href="https://instagram.com/moonfit" class="footer__social-btn" target="_blank" rel="noopener noreferrer" aria-label="Instagram de MoonFit">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        <a href="https://instagram.com/moonfit_bowls"
+           class="footer__social-btn"
+           target="_blank" rel="noopener noreferrer"
+           aria-label="Instagram de MoonFit (@moonfit_bowls)">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+          </svg>
           Instagram
         </a>
-        <a href="https://tiktok.com/@moonfit" class="footer__social-btn" target="_blank" rel="noopener noreferrer" aria-label="TikTok de MoonFit">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.34 6.34 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.74a4.85 4.85 0 0 1-1.01-.05z"/></svg>
+        <a href="https://tiktok.com/@moonfit_bowls"
+           class="footer__social-btn"
+           target="_blank" rel="noopener noreferrer"
+           aria-label="TikTok de MoonFit">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.34 6.34 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.74a4.85 4.85 0 0 1-1.01-.05z"/>
+          </svg>
           TikTok
         </a>
+        <a href="https://wa.me/58000000000"
+           class="footer__social-btn"
+           target="_blank" rel="noopener noreferrer"
+           aria-label="WhatsApp de MoonFit">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/>
+          </svg>
+          WhatsApp
+        </a>
       </div>
+
+      <address class="footer__address">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+          <circle cx="12" cy="10" r="3"/>
+        </svg>
+        Garana, Mérida, Venezuela
+      </address>
 
     </div>
     <div class="footer__bottom">
-      <p>&copy; 2026 MoonFit. Todos los derechos reservados. Hecho con ❤️ en Mérida, Venezuela.</p>
+      <p>&copy; 2026 MoonFit. Todos los derechos reservados.</p>
     </div>
   </footer>
 
